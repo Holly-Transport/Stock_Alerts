@@ -51,8 +51,8 @@ if raw_today.day<10:
 else:
     day = raw_today.day
 
-today = f"{year}-{month}-{day}"
-yesterday = f"{year}-{month}-{day-1}"
+today = f"{year}-{month}-{day-1}"
+yesterday = f"{year}-{month}-{day-2}"
 
 # Calculate Closing Price Yesterday and Today
 close_today = float(stock_data["Time Series (Daily)"][today]["4. close"])
